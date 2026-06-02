@@ -1,0 +1,15 @@
+body{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    align-items:center;
+    height:100vh;
+}
+.animated-button{
+    background-color:blue;
+    size:300px;
+}
+.animated-button:hover{
+    background-color:green;
+    scale:1.2;
+}
