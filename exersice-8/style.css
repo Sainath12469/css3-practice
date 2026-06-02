@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container{
+    margin-top: 200px;
+    border-radius: 10px;
+}
+.image-container img{
+    border-radius: 10px;
+}
+.image-container:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease;
+}
