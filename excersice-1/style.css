@@ -6,6 +6,7 @@
     padding :20px;
     justify-content: space-evenly;
     width:600px;
+    border-radius:10px;
 }
 .nav div{
     margin:20px;
