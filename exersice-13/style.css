@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #2a2f4a, #5d5f8d);
+    color: #fff;
+}
+
+.login-page {
+    width: 100%;
+    padding: 24px;
+}
+
+.login-card {
+    width: min(420px, 100%);
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    border-radius: 18px;
+    padding: 36px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(14px);
+    animation: fadeIn 0.8s ease forwards;
+    opacity: 0;
+}
+
+.login-card h2 {
+    margin: 0 0 24px;
+    font-size: 2rem;
+    letter-spacing: 0.02em;
+}
+
+.login-card label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #e8eaf6;
+}
+
+.login-card input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+}
+
+.login-card input:focus {
+    border-color: #94b3ff;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.login-card button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #6c7ae0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.login-card button:hover {
+    background: #5a67d8;
+    transform: translateY(-2px);
+    box-shadow: 0 14px 28px rgba(31, 41, 55, 0.2);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 500px) {
+    .login-card {
+        padding: 28px 20px;
+        border-radius: 16px;
+    }
+
+    .login-card h2 {
+        font-size: 1.75rem;
+    }
+}
