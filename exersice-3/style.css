@@ -58,11 +58,11 @@ body {
     color: #333;
 }
 figure {
-    padding:1x;    
+    padding: 1px;x;    
 }
 figure:hover {
     transform: translateY(-5px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
     border: 1px solid black;
 }
 @media (max-width: 900px) {
