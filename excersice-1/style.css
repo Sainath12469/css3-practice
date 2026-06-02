@@ -1,0 +1,20 @@
+.nav{
+    display:flex;
+    margin:100px;
+    color:rgb(201, 226, 161);
+    background-color:rgba(155, 30, 30, 0.986);
+    padding :20px;
+    justify-content: space-evenly;
+    width:600px;
+}
+.nav div{
+    margin:20px;
+    padding:10px;
+}
+@media  (max-width:767px)
+{
+    .nav{
+        flex-direction:column;
+        width   :150px;
+    }
+}
